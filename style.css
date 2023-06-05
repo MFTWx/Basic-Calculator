@@ -1,0 +1,81 @@
+/* display inline -> garis atau horizontal tetapi tidak bisa mengatur panjangnya */
+/* display block -> membentuk stack bisa diubah tinggi dan panjangnya, ujung ke ujung untuk panjangnya */
+/* display inline-block -> gabungan inline dan block -> kita mengambil panjang border sesuai dengan panjang konten tetapi ada konsep bloknya yaitu bisa mengambil panjang dan tingginya */
+/* pemakaian css -> inline, internal, external */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+/* reset css */
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* % -> ngambil dari ukuran parent */
+    width: 100%;
+    /* vw -> ngambil dari ukuran layar screen browser user */
+    height: 100vw;
+    background-color: #f59c7c;
+    display: flex;
+    /* ini buat horizontal */
+    justify-content: center;
+     /* ini buat vertikal  */
+    align-items: center; 
+}
+
+.container {
+    background-color: #41487c;
+    border : none;
+    padding : 1em;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #484848;
+    /* x, y, blur, warna */
+}
+
+.content .display {
+    color : whitesmoke;
+    background: none;
+    border : none;
+    height : 7rem;
+    text-align: end;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+section {
+    margin: 1em 0;
+    display : flex;
+    justify-content: space-between;
+}
+
+.operator, .number, .reset {
+    border : none;
+    border-radius: 50px;
+    height : 3.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #bfafb2;
+    font-weight: 500;
+}
+
+.number{
+    color: whitesmoke;
+    background: none;
+}
+
+.reset {
+    color: #f97a43;
+}
+
+.operator {
+    background-color: #f97a43;
+    color: whitesmoke;
+}
+
+/*  
+    rem -> root elemet -> ngambil dri root
+    em -> element -> ngikutin parent / yang ngebungkusnya
+*/

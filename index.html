@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="content">
+
+            <input type="text" class="display" value="" disabled>
+
+        </div>
+
+        <div class="key">
+
+            <!-- row 1 -->
+            <section>
+                <input type="button" value="C" class="reset" data-value="C">
+                <input type="button" value="DE" class="operator" data-value="DE">
+                <input type="button" value="%" class="operator" data-value="%">
+                <input type="button" value="/" class="operator" data-value="/">
+            </section>
+
+            <!-- row 2 -->
+            <section>
+                <input type="button" value="7" class="number" data-value="7">
+                <input type="button" value="8" class="number" data-value="8">
+                <input type="button" value="9" class="number" data-value="9">
+                <input type="button" value="X" class="operator" data-value="*">
+            </section>
+
+            <!-- row 3 -->
+            <section>
+                <input type="button" value="4" class="number" data-value="4">
+                <input type="button" value="5" class="number" data-value="5">
+                <input type="button" value="6" class="number" data-value="6">
+                <input type="button" value="-" class="operator" data-value="-">
+            </section>
+
+            <!-- row 4 -->
+            <section>
+                <input type="button" value="1" class="number" data-value="1">
+                <input type="button" value="2" class="number" data-value="2">
+                <input type="button" value="3" class="number" data-value="3">
+                <input type="button" value="+" class="operator" data-value="+">
+            </section>
+
+            <!-- row 5 -->
+            <section>
+                <input type="button" value="0" class="number" data-value="0">
+                <input type="button" value="00" class="number" data-value="00">
+                <input type="button" value="." class="number" data-value=".">
+                <input type="button" value="=" class="operator" data-value="=">
+            </section>
+        
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- ctrl + space buat suggestion -->
+<!-- ctrl + d buat block -->
+<!-- alt + shift + arrow key buat copy line -->
+<!-- ctrl + shift + k buat delete row -->
